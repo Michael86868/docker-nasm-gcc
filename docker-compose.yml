@@ -1,0 +1,10 @@
+version: '3'
+services:
+  linux:
+    container_name: nasm-gcc-container
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: sleep 1000
+    volumes:
+      - ./:/usr/src
